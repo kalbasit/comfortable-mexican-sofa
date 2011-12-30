@@ -1,7 +1,5 @@
 class CmsAdmin::BaseController < ApplicationController
 
-  protect_from_forgery
-
   # Authentication module must have #authenticate method
   include ComfortableMexicanSofa.config.admin_auth.to_s.constantize
 
